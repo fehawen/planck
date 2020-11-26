@@ -1,2 +1,0 @@
-# Planck Layout by fehawen
-

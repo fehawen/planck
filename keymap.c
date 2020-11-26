@@ -128,7 +128,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * │ F1   │ F2   │ F3   │ F4   │ F5   │ F6   │ F7   │ F8   │ F9   │ F10  │ F11  │ F12  │
  * │      │      │      │      │      │      │      │      │      │      │      │      │
  * ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┤
- * │ Mute │ RGB  │ RGB  │ RGB  │      │      │ Mute │ Vol -│ Vol +│ Bri -│ Bri +│      │
+ * │ Esc  │ RGB  │ RGB  │ RGB  │      │      │ Mute │ Vol -│ Vol +│ Bri -│ Bri +│      │
  * │      │ Togg │ Mod -│ Mod 0│      │      │      │      │      │      │      │      │
  * ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┤
  * │ Shift│ RGB  │ RGB  │ RGB  │ RGB  │ RGB  │ RGB  │ RGB  │ RGB  │      │      │ Enter│
@@ -140,7 +140,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_LAYER_4] = LAYOUT_planck_grid(
     KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12,
-    KC_TAB, RGB_TOG, RGB_RMOD, RGB_MOD, KC_NO, KC_NO, KC_MUTE, KC_VOLD, KC_VOLU, KC_BRID, KC_BRIU, KC_NO,
+    KC_ESC, RGB_TOG, RGB_RMOD, RGB_MOD, KC_NO, KC_NO, KC_MUTE, KC_VOLD, KC_VOLU, KC_BRID, KC_BRIU, KC_NO,
     KC_LSFT, RGB_HUD, RGB_HUI, RGB_SAD, RGB_SAI, RGB_VAD, RGB_VAI, RGB_SPD, RGB_SPI, KC_NO, KC_NO, KC_ENT,
     KC_LCTL, KC_NO, KC_LGUI, KC_LALT, KC_NO, KC_SPC, KC_SPC, KC_NO, KC_NO, KC_RALT, KC_RCTL, KC_RSFT
 )

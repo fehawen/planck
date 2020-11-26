@@ -14,9 +14,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-// TODO: MOD 3, MOD 4, delete _ADJUST
-// Might need to use s(KC_) for shift, and not sure if a(KC_) works for alt?
-
 #include QMK_KEYBOARD_H
 
 enum planck_layers {
@@ -103,8 +100,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* LAYER 3
  * ┌──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┐
- * │ Tab  │      │      │ £    │      │      │      │      │      │      │      │Bckspc│
- * │      │      │      │      │      │      │      │      │      │      │      │      │
+ * │ Tab  │      │      │ £    │      │ Brows│ Brows│ Page │ Page │ Brows│ Brows│Bckspc│
+ * │      │      │      │      │      │ home │ back │ down │ up   │ forw │ refr │      │
  * ├──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┼──────┤
  * │ Esc  │      │      │ €    │      │      │ Left │ Down │ Up   │ Right│      │      │
  * │      │      │      │      │      │      │      │      │      │      │      │      │
@@ -117,7 +114,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * └──────┴──────┴──────┴──────┴──────┴─────────────┴──────┴──────┴──────┴──────┴──────┘
  */
 [_LAYER_3] = LAYOUT_planck_grid(
-    KC_TAB, KC_NO, KC_NO, RALT(KC_3), KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, RSFT(KC_0), KC_NO, KC_BSPC,
+    KC_TAB, KC_NO, KC_NO, RALT(KC_3), KC_NO, KC_WHOM, KC_WBAK, KC_PGDN, KC_PGUP, KC_WFWD, KC_WREF, KC_BSPC,
     KC_ESC, KC_NO, KC_NO, RALT(KC_E), KC_NO, KC_NO, KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_NO, KC_NO,
     KC_LSFT, KC_NO, KC_NO, KC_NO, KC_PSLS, RALT(KC_RBRC), KC_NO, RSFT(KC_0), RSFT(KC_COMM), RSFT(KC_DOT), KC_QUES, KC_ENT,
     KC_LCTL, KC_NO, KC_LGUI, KC_LALT, KC_NO, KC_SPC, KC_SPC, KC_NO, KC_NO, KC_RALT, KC_RCTL, KC_RSFT

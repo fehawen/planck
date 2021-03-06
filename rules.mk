@@ -1,5 +1,3 @@
-# Build options
-
 AUDIO_ENABLE = no
 CONSOLE_ENABLE = no
 MIDI_ENABLE = no
